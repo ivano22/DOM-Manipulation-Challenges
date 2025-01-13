@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            transition: all ease-in 0.4s;
+        }
+        .toggle-button{
+            color:white;
+            background-color: rgb(33, 25, 25);
+            padding: 1rem;
+            border-radius: 20px;
+            transition: all ease-in 0.4s;
+            cursor: pointer;
+
+        }
+        .dark-mode{
+            background-color: rgb(33, 30, 30);
+            color: rgb(255, 255, 255);
+            button{
+                background-color: rgb(249, 249, 249);
+                color: black;
+            }
+
+        }
+        .light-mode{
+            background-color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Theme Switcher</h1>
+    <Div>
+        <button class="toggle-button " id="toggle-theme">Switch Theme</button>
+    </Div>
+    <script src="./index.js"></script>
+</body>
+</html>

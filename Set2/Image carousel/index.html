@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        body{
+        
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        
+        
+        }
+         .carousel-container {
+            max-width: 800px;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-top: 50px;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            z-index: 1;
+        }
+
+        .carousel-button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev-button {
+            left: 1rem;
+        }
+
+        .next-button {
+            right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Carousel</h1>
+
+    <div class="carousel-container">
+        <button class="carousel-button prev-button">Previous</button>
+        <button class="carousel-button next-button">Next</button>
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="./images/Eye-Health.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="./images/Health policy development and reform.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="./images/Health Systems Strengthening.jpg" alt="Image 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="./images/Monitoring and Evaluation (M&E).jpg" alt="Image 4">
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

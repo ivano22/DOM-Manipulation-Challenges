@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Table Rows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        #searchInput {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        .no-results {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Filter Table Rows</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for names...">
+    </div>
+    
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Stream</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ronald</td>
+                <td>Primary five</td>
+                <td>blue</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Josiah</td>
+                <td>Primary Five</td>
+                <td>Yellow</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Ivan</td>
+                <td>Primary Five</td>
+                <td>Orange</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Tabitha</td>
+                <td>Primary Five</td>
+                <td>Blue</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Angella</td>
+                <td>Primary Five</td>
+                <td>Yellow</td>
+                <td>11</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="./index.js"></script>
+</body>
+</html>
